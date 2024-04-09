@@ -11,21 +11,6 @@
     width: 100%;
     margin: 10px auto;
   }
-  img.img-column {
-    width: 100;
-    display: none;
-  }
-  img.about-img {
-    margin: 110px;
-    width: 100;
-  }
-
-  h2#front-end2 {
-    text-align: center;
-  }
-  .faq-container {
-    font-size: x-small;
-  }
 }
 span {
   font-size: 40px;
@@ -62,6 +47,8 @@ img {
   display: block;
   margin: 50px auto;
   border-radius: 150px;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
