@@ -1,8 +1,9 @@
 :root {
   --primary-color: rgb(248, 242, 233);
-  --secondary-color: rgb(5, 38, 52);
+  --secondary-color: rgb(25, 42, 37);
   --third-color: rgb(85, 67, 72);
   --fourth-color: rgba(15, 31, 43, 0.2);
+  --fifth-color: rgb(180, 120, 107);
 }
 
 @media (max-width: 800px) {
@@ -58,7 +59,7 @@ img {
 #nav {
   background-color: var(--secondary-color);
   box-shadow: 10px 10px 20px rgba(15, 31, 43, 0.2);
-  color: var(--primary-color);
+  color: var(--fifth-color);
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -72,12 +73,16 @@ img {
   color: var(--primary-color);
 }
 .section {
-  padding-top: 110px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .container {
   margin-top: 50px;
+}
+
+.bg-image{
+  background-image: url("../img/bkgflowers.png");
 }
 
 p {
