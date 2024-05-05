@@ -38,25 +38,13 @@
   </head>
   <body style="background-color: rgb(25, 42, 37)">
 
-    <!--  NAVBAR -->
-    <nav class="navbar navbar-expand-sm navbar-custom sticky-top py-0" id="nav">
+    <!--  NAVBAR FULLSCREEN-->
+    <nav class="navbar navbar-expand-lg fixed-top py-0 navbar-custom " id="nav">
       <!--  Container wrapper -->
-      <div class="container-fluid justify-content-center justify-content-md-between d-none d-lg-block">
-        <div class="row">
+      <div class="container-fluid">
           <!--  Left Elements -->
-          <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center d-none d-lg-flex">
+          <div class="col-lg-4 d-flex justify-content-center justify-content-md-start align-items-center .d-block ">
             <a class="navbar-brand" href="#"><span class="name">Kottrheim</span></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a
@@ -90,17 +78,27 @@
               </div>
             </div>
           </div>
+          <button
+            class="navbar-toggler custom-toggler show_on_mobile ml-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          > 
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
           <!--  Center Elements -->      
-          <div class="col-md-4 align-items-center d-flex justify-content-center ">
+          <div class="col-lg-4 align-items-center d-flex justify-content-center d-none d-md-block">
             <div class="title">Amelia Andersson & Alexander Linné</div>
           </div>
 
           <!--  Right Elements -->
-          <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+          <div class="col-lg-4 d-flex justify-content-center justify-content-md-end align-items-center d-none d-md-block">
             <div class="subtitle">15 Juni 2024, Slottsträdgårdens Kafé</div>
           </div>
-        </div>
       </div>
     </nav>
 
@@ -111,6 +109,13 @@
         alt="Circle of flowers"
         width="600"
       />
+      <p> Den 15 Juni gifter vi oss och bjuder in er till vår vigseln och en liten middag efteråt med våra närmsta för att fira våran kärlek.<br>
+        Vi har ingen möjlighet att ta emot presenter på bröllopet och för oss så är eran närvaro den bästa presenten vi kan tänka oss.<br>
+        Om ni vill hålla ett tal eller lägga till något på schemat under middagen så kontakta vår Toastmaster Selina Andersson på mobilnumret 072-325 63 15 eller maila selinadieye@gmail.com <br>
+        Vi kommer bjuda på champagne, middag, kaffe och bröllopstårta. Det kommer finnas en bar där man kan köpa dricka till maten.
+        Det kommer förhoppningsvis vara soligt väder och vi kommer äta middag i ett växthus så ha inte för varma kläder på er.<br>
+        Vi tackar Gudrun Isaksson som viger oss denna dagen. <br>
+        </p>
     </div>
 
     <!--  LOCATION -->
@@ -134,15 +139,39 @@
     <div class="tid section" id="tid">
       <img
         src="img/divider.png"
-        alt="Circle of flowers"
+        alt="Divider"
         width="600"
       />
       <h1 class="header">Schema</h1>
-      <h2 class="header">15.30: Vigsel</h2>
-      <h2 class="header">17.00: Middag</h2>
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-5">
+              <h2 class="header leftschedule">Gäster</h2>
+              <h3 class="header leftschedule">15.30: Vigsel</h3>
+              <h3 class="header leftschedule">16.00: Fotografering med gäster</h3>
+              <h3 class="header leftschedule">17.00: Champagneskålning</h3>
+              <h3 class="header leftschedule">17.30: Middag</h3>
+          </div>
+          <div class="col-2">
+            <div class="center">
+              <div style="border-left:1px solid #FFF;height:350px"></div>
+            </div>
+          </div>
+          <div class="col-5">
+              <h2 class="header rightschedule">Brudparet</h2>
+              <h3 class="header rightschedule">13.00: First look</h3>
+              <h3 class="header rightschedule">13.15: Fotografering</h3>
+              <h3 class="header rightschedule">15.30: Vigsel</h3>
+              <h3 class="header rightschedule">16.00: Fotografering med gäster</h3>
+              <h3 class="header rightschedule">17.00: Champagneskålning</h3>
+              <h3 class="header rightschedule">17.30: Middag</h3>
+              <h3 class="header rightschedule">22.00: Hemgång</h3>
+          </div>
+        </div>
+      </div>
       <img
         src="img/divider2.png"
-        alt="Circle of flowers"
+        alt="Divider"
         width="600"
       />
     </div>
@@ -153,7 +182,17 @@
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="mat section" id="mat">
             <h1 class="header">Middag</h1>
-            <h2 class="header">TBA</h2>
+            <br>
+            <h2 class="header">Förrätt</h2>
+            <h3 class="header">Skagenröra med krispigt bröd & citronkaviar</h3>
+            <br>
+            <h2 class="header">Huvudrätt</h2>
+            <h3 class="header">Långbakad medium-rare entrecôte</h3>
+            <h3 class="header">Med confiterade grönsaker, lingon coulis & salvia.</h3>
+            <br>
+            <h2 class="header">Efterrätt</h2>
+            <h3 class="header">Bröllopstårta</h3>
+            <h3 class="header">Vit chokladmousse, vaniljkräm, färska bär & ätbara blommor. Avklädd tårta.</h3>
           </div>
         </div>
       </div>

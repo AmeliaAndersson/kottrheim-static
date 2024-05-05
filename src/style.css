@@ -7,12 +7,23 @@
 }
 
 @media (max-width: 800px) {
-  a.btn {
-    justify-content: center;
-    width: 100%;
-    margin: 10px auto;
+  .show_on_mobile {
+    display: block;
+  }
+  .hide_on_mobile {
+    display: none;
   }
 }
+
+@media (max-width: 801) {
+  .hide_on_mobile {
+    display: block;
+  }
+  .show_on_mobile {
+    display: none;
+  }
+}
+
 span {
   font-size: 40px;
   color: var(--primary-color);
@@ -26,10 +37,16 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-family: "Snell Roundhand", cursive;
+  font-family: "Black Jack", cursive;
   margin-top: 50% auto;
   text-align: center;
 }
+h3 {
+  font-family: "Lora", serif;
+  margin-top: 50% auto;
+  text-align: center;
+}
+
 
 b.bold {
   text-align: center;
@@ -57,8 +74,12 @@ img {
   color: var(--fifth-color);
 }
 
-.navbar-custom .navbar-nav .nav-link {
+.navbar-custom .navbar-nav .nav-link{
   color: var(--primary-color);
+}
+
+.custom-toggler .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(248, 242, 233, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-brand {
   font-family: "Lobster", sans-serif;
@@ -94,6 +115,23 @@ img {
 
 .bg-image{
   background-image: url("../img/bkgflowers.png");
+}
+
+.leftschedule {
+  margin-top: 50% auto;
+  text-align: right;
+  display: block;
+}
+
+.rightschedule {
+  margin-top: 50% auto;
+  text-align: left;
+  display: block;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 p {
